@@ -1,4 +1,8 @@
-# .design v5 — Workflow automatizado e local com uso do conceito de flows e job runner
+# .design v5
+
+## Workflow automatizado e local com uso do conceito de flows e job runner
+
+![Image](./assets/img/design.jpg)
 
 Você quer escrever:
 > **"Execute o workflow .design para redesign do alvo settings."**
@@ -59,8 +63,11 @@ Crie uma regra/instruction:
 ---
 
 ## Nota sobre “diálogo automático”
-O runner **não pergunta** nada (sem TTY). Ele:
+O agente é quem lê o scorecard e conversa com você, e depois atualiza o spec/plan.
+O runner **não pergunta** nada (sem TTY). 
+Ele:
 - cria um `decision.md` dentro de `.design/candidates/<alvo>/`
 - marca o job como `awaiting_user_decision`
 
-O agente é quem lê o scorecard e conversa com você, e depois atualiza o spec/plan.
+---
+
